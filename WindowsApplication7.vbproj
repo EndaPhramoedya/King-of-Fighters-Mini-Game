@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{15455ABE-9976-4930-8F43-BAE367B03221}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>WindowsApplication7.My.MyApplication</StartupObject>
+    <RootNamespace>WindowsApplication7</RootNamespace>
+    <AssemblyName>WindowsApplication7</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>WindowsApplication7.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>WindowsApplication7.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\background.png" />
+    <None Include="Resources\crouchR.png" />
+    <None Include="Resources\crouchL.png" />
+    <None Include="Resources\KOF98_-_Omega_Rugal_Theme_OST.wav" />
+    <None Include="Resources\jumpatk_02L.png" />
+    <None Include="Resources\jumpatk_01L.png" />
+    <None Include="Resources\jumpatk_02R.png" />
+    <None Include="Resources\jumpatk_01R.png" />
+    <None Include="Resources\fights_03.png" />
+    <None Include="Resources\fights_02.png" />
+    <None Include="Resources\fights_01.png" />
+    <None Include="Resources\start_01.png" />
+    <None Include="Resources\punch_07R.png" />
+    <None Include="Resources\punch_07L.png" />
+    <None Include="Resources\walking_01L.png" />
+    <None Include="Resources\walking_02R.png" />
+    <None Include="Resources\walking_02L.png" />
+    <None Include="Resources\walking_01R.png" />
+    <None Include="Resources\idleR.png" />
+    <None Include="Resources\idleL.png" />
+    <None Include="Resources\intro_01R.png" />
+    <None Include="Resources\intro_06R.png" />
+    <None Include="Resources\intro_05R.png" />
+    <None Include="Resources\intro_04R.png" />
+    <None Include="Resources\intro_03R.png" />
+    <None Include="Resources\intro_02R.png" />
+    <None Include="Resources\ball.png" />
+    <Content Include="Resources\bkg2.png" />
+    <None Include="Resources\punch_02L.png" />
+    <None Include="Resources\punch_01R.png" />
+    <None Include="Resources\punch_01L.png" />
+    <None Include="Resources\punch_06R.png" />
+    <None Include="Resources\punch_06L.png" />
+    <None Include="Resources\punch_05R.png" />
+    <None Include="Resources\punch_05L.png" />
+    <None Include="Resources\punch_04R.png" />
+    <None Include="Resources\punch_04L.png" />
+    <None Include="Resources\punch_03R.png" />
+    <None Include="Resources\punch_03L.png" />
+    <None Include="Resources\punch_02R.png" />
+    <None Include="Resources\kick_02R.png" />
+    <None Include="Resources\kick_02L.png" />
+    <None Include="Resources\kick_01R.png" />
+    <None Include="Resources\kick_01L.png" />
+    <None Include="Resources\kick_04R.png" />
+    <None Include="Resources\kick_04L.png" />
+    <None Include="Resources\kick_03R.png" />
+    <None Include="Resources\kick_03L.png" />
+    <None Include="Resources\bkg3.png" />
+    <Content Include="Resources\bolo1.png" />
+    <None Include="Resources\crouchatk_02L.png" />
+    <None Include="Resources\crouchatk_02R.png" />
+    <None Include="Resources\crouchatk_01L.png" />
+    <None Include="Resources\crouchatk_01R.png" />
+    <None Include="Resources\dmg_01R.png" />
+    <None Include="Resources\dmg_02L.png" />
+    <None Include="Resources\dmg_02R.png" />
+    <None Include="Resources\dmg_03L.png" />
+    <None Include="Resources\dmg_03R.png" />
+    <None Include="Resources\dmg_04L.png" />
+    <None Include="Resources\dmg_04R.png" />
+    <None Include="Resources\dmg_01L.png" />
+    <None Include="Resources\explode1.png" />
+    <None Include="Resources\explode2.png" />
+    <None Include="Resources\crouchdmg_01L.png" />
+    <None Include="Resources\crouchdmg_01R.png" />
+    <None Include="Resources\crouchdmg_02L.png" />
+    <None Include="Resources\crouchdmg_02R.png" />
+    <None Include="Resources\crouchdmg_03L.png" />
+    <None Include="Resources\crouchdmg_03R.png" />
+    <Content Include="Resources\jumping_01L.png" />
+    <Content Include="Resources\jumping_01R.png" />
+    <Content Include="Resources\jumping_02L.png" />
+    <Content Include="Resources\jumping_02R.png" />
+    <Content Include="Resources\jumping_03L.png" />
+    <Content Include="Resources\jumping_03R.png" />
+    <Content Include="Resources\jumping_04L.png" />
+    <Content Include="Resources\jumping_04R.png" />
+    <None Include="Resources\projectile\reppuken_01R.png" />
+    <None Include="Resources\projectile\reppuken_02L.png" />
+    <None Include="Resources\projectile\reppuken_02R.png" />
+    <None Include="Resources\projectile\reppuken_03L.png" />
+    <None Include="Resources\projectile\reppuken_03R.png" />
+    <None Include="Resources\projectile\reppuken_04L.png" />
+    <None Include="Resources\projectile\reppuken_04R.png" />
+    <None Include="Resources\projectile\reppuken_05L.png" />
+    <None Include="Resources\projectile\reppuken_05R.png" />
+    <None Include="Resources\projectile\reppuken_06L.png" />
+    <None Include="Resources\projectile\reppuken_06R.png" />
+    <None Include="Resources\projectile\reppuken_01L.png" />
+    <None Include="Resources\movelist.png" />
+    <None Include="Resources\Kof.png" />
+    <None Include="Resources\movelist2.png" />
+    <None Include="Resources\score.PNG" />
+    <Content Include="Resources\smoke_1.png" />
+    <Content Include="Resources\smoke_2.png" />
+    <Content Include="Resources\smoke_3.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
